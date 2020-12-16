@@ -1,1 +1,126 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin:0;
+}
+
+
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/matsal3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    'he he he he he'
+    'ar as as as as'
+    'fo fo fo fo fo'
+    ;
+}
+.header {
+    font-family: 'Andika New Basic', sans-serif;
+    grid-area: he;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article {
+    grid-area: ar;
+    padding: 10px
+}
+
+.footer {
+    grid-area: fo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside {
+    grid-area: as;
+}
+
+.pic{
+    display: block;
+    width: 1000px;
+}
+
+img {
+    padding: 5%;
+    
+}
+ 
+#div1 {
+    flex: 1;
+    grid-area: d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div2 {
+    flex: 1;
+    grid-area: d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div3 {
+    flex: 2;
+    grid-area: d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div4 {
+    flex: 1;
+    grid-area: d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div5 {
+    flex: 1;
+    grid-area: d5;
+    
+}
+
+.headeritems{
+    padding: 10px;
+}
+
+.headeritems a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.Logo {
+    color: rgb(255, 255, 255);
+}
+
+#Hamburger{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#map{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.space {
+    background-color: rgb(211, 112, 0);
+    width: 100vw;
+    height: 20vh;
+}
